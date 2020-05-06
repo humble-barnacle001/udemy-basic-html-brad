@@ -118,7 +118,7 @@ a {
 
 #show2 {
     background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .4)), url('/res/img/logo.png') center center/cover no-repeat;
-    background-color: #aaa;
+    background-color: #ccc;
     z-index: -1;
     overflow: auto;
 }
@@ -160,6 +160,7 @@ a {
     height: 350px;
     opacity: 0.75;
     padding-bottom: 20px;
+    margin: auto;
 }
 
 .feat i {
