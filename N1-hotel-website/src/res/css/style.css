@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.75em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    background: #333;
+    overflow: auto;
+}
+
+.nav-container h2 {
+    display: inline-block;
+    font-size: 25px;
+    text-align: left;
+    padding: 10px 10px 10px 70px;
+    color: #f7c08a;
+}
+
+.navigation {
+    list-style: none;
+    float: right;
+    padding-right: 70px;
+}
+
+.navigation li {
+    text-align: center;
+    font-size: 25px;
+    max-width: 120px;
+    float: left;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+.navigation a {
+    color: #fff;
+}
+
+.current {
+    background: #444;
+}
+
+.current a {
+    color: #f7c08a;
+}
+
+.current:hover {
+    cursor: none;
+}
+
+.link:hover {
+    cursor: pointer;
+    background: #444;
+    text-decoration: none;
+}
+
+.showcase {
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .4)), url('../img/hotel-night.jpg') no-repeat bottom center/cover;
+    /* opacity: 0.7; */
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.showcase h1 {
+    font-size: 90px;
+    color: white;
+    padding: 50px;
+}
+
+.showcase p {
+    max-width: 900px;
+    font-size: 23px;
+    color: rgb(20, 20, 20);
+    margin: auto;
+    padding-bottom: 130px;
+}
+
+.highlight {
+    color: #f7c08a;
+}
+
+.btn {
+    margin: auto;
+    max-width: 300px;
+    background-color: #333;
+    padding: 15px 2px;
+    text-align: center;
+}
+
+.btn h3 {
+    font-size: 20px;
+    color: #f7c08a;
+    margin: auto;
+}
+
+.btn:hover {
+    background-color: #f7c08a;
+    cursor: pointer;
+}
+
+.btn:hover h3 {
+    color: #333;
+}
+
+#show1 {
+    background: url('/res/img/hotel-interior.jpg') no-repeat center center/cover;
+    opacity: 0.8;
+}
+
+#show2 {
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .4)), url('/res/img/logo.png') center center/cover no-repeat;
+    background-color: #aaa;
+    z-index: -1;
+    overflow: auto;
+}
+
+#show2 h2 {
+    font-size: 67px;
+    line-height: 1.3em;
+    padding: 20px;
+}
+
+#show2 p {
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+    padding: 20px;
+    padding-bottom: 70px;
+}
+
+.show {
+    float: left;
+    height: 850px;
+    width: 50%;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.clear {
+    white-space: pre-line;
+}
+
+#features {
+    display: inline-block;
+}
+
+.feat {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    height: 350px;
+    opacity: 0.75;
+    padding-bottom: 20px;
+}
+
+.feat i {
+    padding: 70px 20px 10px 20px;
+}
+
+.feat:hover {
+    opacity: 1.7;
+    background: #f7c08a;
+}
+
+.feat h3 {
+    padding: 20px;
+}
+
+.footer {
+    background: #333;
+    text-align: center;
+    color: #f7c08a;
+}
+
+.footer h4 {
+    padding: 30px;
+}
