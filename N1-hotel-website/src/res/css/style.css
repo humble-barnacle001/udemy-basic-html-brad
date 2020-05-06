@@ -54,6 +54,10 @@ a {
     cursor: none;
 }
 
+.current a:hover {
+    cursor: none;
+}
+
 .link:hover {
     cursor: pointer;
     background: #444;
