@@ -44,6 +44,7 @@ p {
     padding: 14px 21px;
     border: none;
     cursor: pointer;
+    border-radius: 7px;
 }
 
 .btn:hover {
@@ -73,6 +74,33 @@ p {
     clear: both;
 }
 
+.box {
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 20px;
+}
+
+.py-1 {
+    padding: 10px 0;
+}
+
+.py-2 {
+    padding: 20px 0;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+.head-l {
+    font-size: 40px;
+}
+
 #navbar {
     background: #333;
     color: #fff;
@@ -86,6 +114,10 @@ p {
 #navbar h1 {
     float: left;
     padding-top: 20px;
+}
+
+#navbar .logo a {
+    color: #f7c08a;
 }
 
 #navbar ul {
@@ -166,13 +198,58 @@ p {
     padding: 30px;
 }
 
-.box {
-    width: 33.3%;
+#about-info .info-left {
+    width: 50%;
     float: left;
-    padding: 50px;
-    text-align: center;
+    min-height: 100%;
 }
 
-.box i {
-    margin-bottom: 20px;
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+#testimonials {
+    max-height: 1200px;
+    /* min-height: 700px; */
+    background: url('/res/img/hotel-day.jpg') center center/cover no-repeat;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    overflow: auto;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    border-radius: 60%;
+    opacity: 0.8;
+}
+
+#testimonials h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+    padding: 30px;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+#testimonials .container h2 {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
 }
