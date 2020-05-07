@@ -45,20 +45,17 @@ a {
     font-weight: lighter;
     max-width: 120px;
     float: left;
-    padding: 10px 20px;
     margin: auto;
 }
 
 .navigation a {
     color: #fff;
-}
-
-.current {
-    background: #444;
+    padding: 24px 20px;
 }
 
 .current a {
     color: #f7c08a;
+    background: #444;
 }
 
 .current:hover {
@@ -69,7 +66,7 @@ a {
     cursor: none;
 }
 
-.link:hover {
+.link a:hover {
     cursor: pointer;
     background: #444;
     text-decoration: none;
