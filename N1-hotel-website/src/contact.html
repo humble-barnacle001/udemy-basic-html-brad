@@ -28,13 +28,52 @@
             </ul>
         </div>
     </nav>
-
-
-    <h1>WAIT TILL ITS CREATED</h1>
-    <br>
-
-
-    <footer class="footer bg-dark">
+    <section id="contact-form" class="bg-light">
+        <div class="form-container">
+            <h2><span class="highlight">Contact</span> Us</h2>
+            <p>Please fill out the form below to contact us</p>
+            <form id="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="Message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn"><h3>Submit</h3></button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <section id="hotel-details" class="bg-dark">
+        <div class="feat bg-dark">
+            <i class="fas fa-hotel fa-5x"></i>
+            <h3>Location</h3>
+            <p>Lorem, Ipsum, Dolor, Sit-454123</p>
+        </div>
+        <a href="tel:">
+            <div class="feat bg-light">
+                <i class="fas fa-phone fa-5x"></i>
+                <h3>Phone Number</h3>
+                <p>+91-7824536451</p>
+            </div>
+        </a>
+        <a href="mailto:">
+            <div class="feat bg-dark">
+                <i class="fas fa-envelope fa-5x"></i>
+                <h3>Email Address</h3>
+                <p>contact@hotelsoc.com</p>
+            </div>
+        </a>
+    </section>
+    <footer class="footer">
         <h4>Hotel Solace Continental &COPY; 2020, All Rights Reserved.</h4>
     </footer>
 </body>

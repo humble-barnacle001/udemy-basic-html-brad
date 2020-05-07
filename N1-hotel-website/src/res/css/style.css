@@ -10,6 +10,16 @@ a {
     text-decoration: none;
 }
 
+.bg-light {
+    background: #eef;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
 .nav-container {
     background: #333;
     overflow: auto;
@@ -32,6 +42,7 @@ a {
 .navigation li {
     text-align: center;
     font-size: 25px;
+    font-weight: lighter;
     max-width: 120px;
     float: left;
     padding: 10px 20px;
@@ -163,23 +174,16 @@ a {
     display: inline-block;
 }
 
-.bg-light {
-    background: #eee;
-    color: #333;
-}
-
-.bg-dark {
-    background: #333;
-    color: #fff;
-}
-
 .feat {
     width: 33%;
     display: inline-block;
     text-align: center;
     height: 350px;
-    opacity: 0.75;
     padding-bottom: 20px;
+}
+
+#features .feat {
+    opacity: 0.75;
 }
 
 .feat i {
@@ -200,7 +204,7 @@ a {
     height: 150px;
     padding: 50px;
     margin: auto;
-    background: #a09b95;
+    background: #9df0e5;
 }
 
 .tocontact .btn {
@@ -269,7 +273,72 @@ a {
     padding-bottom: 20px;
 }
 
+#contact-form {
+    padding: 30px 0px;
+}
+
+.form-container {
+    padding: 10px 0;
+    max-width: 1000px;
+    overflow: auto;
+    margin: auto;
+}
+
+#contact-form h2 {
+    font-size: 65px;
+    padding-top: 5px;
+}
+
+#contact-form p {
+    font-size: 20px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+#hotel-details {
+    margin: auto;
+    border: #333 2px solid;
+}
+
+#hotel-details .feat p {
+    font-weight: bolder;
+}
+
+#hotel-details .feat h3 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
 .footer {
+    background: #444;
     text-align: center;
     color: #eee;
 }
