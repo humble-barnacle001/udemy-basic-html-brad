@@ -311,6 +311,7 @@ a {
     width: 100%;
     padding: 10px;
     border: 1px #ddd solid;
+    border-radius: 7px;
 }
 
 #contact-form textarea {
