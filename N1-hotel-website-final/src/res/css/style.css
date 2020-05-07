@@ -160,7 +160,7 @@ p {
 }
 
 #showcase {
-    background: linear-gradient(rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4)), url('/res/img/hotel-night.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4)), url('/res/img/hotel-day.jpg') no-repeat center center/cover;
     height: 700px;
 }
 
@@ -226,7 +226,7 @@ p {
 #testimonials {
     max-height: 1200px;
     /* min-height: 700px; */
-    background: url('/res/img/hotel-day.jpg') center center/cover no-repeat;
+    background: url('/res/img/hotel-night.jpg') center center/cover no-repeat;
     padding-top: 120px;
     padding-bottom: 90px;
     overflow: auto;
