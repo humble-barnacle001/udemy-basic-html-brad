@@ -27,7 +27,7 @@ p {
 
 .container {
     margin: auto;
-    max-width: 1200px;
+    max-width: 1100px;
     overflow: auto;
     padding: 0 20px;
 }
@@ -52,13 +52,19 @@ p {
     color: #333;
 }
 
-#features .btn {
+#features .btn,
+#contact-info .btn {
     cursor: default;
 }
 
 .bg-light {
     background: #f4f4f4;
     color: #333;
+}
+
+#contact-form.bg-light {
+    background: #e0f0ff;
+    color: #222;
 }
 
 .bg-dark {
@@ -252,4 +258,41 @@ p {
     max-width: 500px;
     margin: auto;
     margin-bottom: 30px;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form h3 {
+    padding: 10px;
+}
+
+#contact-info .box {
+    min-height: 310px;
+    max-height: 350px;
+    overflow: auto;
+    text-overflow: ellipsis;
 }
