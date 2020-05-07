@@ -25,6 +25,54 @@ p {
     margin: 10px 0px;
 }
 
+.container {
+    margin: auto;
+    max-width: 1200px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.highlight {
+    color: #f7c08a;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 19px;
+    color: #fff;
+    background: #333;
+    padding: 14px 21px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+
+#features .btn {
+    cursor: default;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.lead {
+    font-size: 21px;
+}
+
+.clr {
+    clear: both;
+}
+
 #navbar {
     background: #333;
     color: #fff;
@@ -58,5 +106,73 @@ p {
 #navbar ul li a:hover,
 #navbar ul li .current {
     background: #444;
-    color: f7c08a;
+    color: #f7c08a;
+}
+
+#main-footer {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+#main-footer h2 {
+    font-weight: lighter;
+}
+
+#showcase {
+    background: linear-gradient(rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4)), url('/res/img/hotel-night.jpg') no-repeat center center/cover;
+    height: 700px;
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 65px;
+    line-height: 1.3em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+#home-info {
+    height: 500px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('/res/img/hotel-interior.jpg') center center/cover;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    background: linear-gradient(rgb(255, 255, 255, 0.2), rgb(255, 255, 255, 0.1)), url('/res/img/logo.png') center center/cover no-repeat;
+    float: right;
+    text-align: center;
+    padding: 90px 30px;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+#home-info .info-content p {
+    padding: 30px;
+}
+
+.box {
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 20px;
 }
