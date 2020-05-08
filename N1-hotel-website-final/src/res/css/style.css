@@ -7,7 +7,7 @@
 html,
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6em;
+    line-height: 1.8em;
 }
 
 a {
@@ -19,6 +19,7 @@ h1,
 h2,
 h3 {
     padding-bottom: 20px;
+    line-height: 1.2em;
 }
 
 p {
@@ -85,6 +86,7 @@ p {
     float: left;
     padding: 50px;
     text-align: center;
+    height: 100%;
 }
 
 .box i {
@@ -105,6 +107,7 @@ p {
 
 .head-l {
     font-size: 40px;
+    line-height: 1.2em;
 }
 
 #navbar {
@@ -161,22 +164,24 @@ p {
 
 #showcase {
     background: linear-gradient(rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4)), url('/res/img/hotel-day.jpg') no-repeat center center/cover;
-    height: 700px;
+    height: 100%;
 }
 
 #showcase .showcase-content {
     color: #fff;
     text-align: center;
     padding-top: 170px;
+    overflow: auto;
 }
 
 #showcase .showcase-content h1 {
     font-size: 65px;
-    line-height: 1.3em;
+    line-height: 1.6em;
 }
 
 #showcase .showcase-content p {
-    padding-bottom: 20px;
+    padding: 40px;
+    padding-bottom: 90px;
     line-height: 1.7em;
 }
 
@@ -225,7 +230,6 @@ p {
 
 #testimonials {
     max-height: 1200px;
-    /* min-height: 700px; */
     background: url('/res/img/hotel-night.jpg') center center/cover no-repeat;
     padding-top: 120px;
     padding-bottom: 90px;
@@ -261,6 +265,19 @@ p {
     margin-bottom: 30px;
 }
 
+#testimonials .container h3 {
+    text-align: center;
+}
+
+#testimonials a.btn {
+    font-size: 25px;
+    color: #f17d09;
+}
+
+#testimonials a.btn:hover {
+    color: #333;
+}
+
 #contact-form .form-group {
     margin-bottom: 20px;
 }
@@ -291,9 +308,100 @@ p {
     padding: 10px;
 }
 
-#contact-info .box {
-    min-height: 310px;
-    max-height: 350px;
-    overflow: auto;
-    text-overflow: ellipsis;
+.disp500 {
+    display: none;
+}
+
+.disp900 {
+    display: none;
+}
+
+
+/* For Media Queries */
+
+@media(max-width:1200px) and (min-width:900px) {
+    .hide9-12 {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    .nodisp500 {
+        display: none !important;
+    }
+    .disp500 {
+        display: inherit !important;
+    }
+    #showcase .showcase-content {
+        padding-top: 20px !important;
+    }
+    #showcase .showcase-content p {
+        padding: 10px !important;
+        padding-bottom: 20px !important;
+    }
+    #home-info .info-content p {
+        padding: 15px !important;
+    }
+    .box {
+        width: 100% !important;
+    }
+}
+
+@media(max-width:900px) {
+    .disp900 {
+        display: inherit;
+    }
+    .nodisp900 {
+        display: none;
+    }
+    .container {
+        max-width: 95%;
+    }
+    .highlight {
+        color: #f17d09;
+    }
+    .box {
+        width: 100%;
+    }
+    #showcase {
+        min-height: 500px;
+    }
+    #showcase .showcase-content {
+        padding-top: 80px;
+    }
+    #showcase .showcase-content h1 {
+        font-size: 55px;
+    }
+    #showcase .showcase-content p {
+        padding: 30px;
+        padding-bottom: 40px;
+    }
+    #home-info .info-content {
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgb(255, 255, 255, 0.1)), url('/res/img/hotel-interior.jpg') center center/cover no-repeat;
+        float: left;
+        width: 100%;
+    }
+    #home-info .info-content p {
+        color: #222;
+        font-weight: bold;
+        padding: 35px;
+    }
+    #home-info .info-content h2 {
+        color: #000033;
+        font-weight: bolder;
+        font-size: 2.1rem;
+    }
+    #about-info {
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url('/res/img/logo.png') no-repeat center center/cover;
+    }
+    #about-info .info-left {
+        width: 100%;
+        padding: 50px;
+        text-align: justify;
+    }
+    #testimonials {
+        overflow: hidden;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
 }
