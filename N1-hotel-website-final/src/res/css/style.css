@@ -289,7 +289,7 @@ p {
 
 #contact-form input,
 #contact-form textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px #ddd solid;
 }
@@ -332,6 +332,14 @@ p {
     .disp500 {
         display: inherit !important;
     }
+    #navbar ul li a,
+    #navbar h1 {
+        padding: 10px !important;
+        font-size: 0.9rem;
+    }
+    #navbar h1 {
+        font-size: 1.5rem;
+    }
     #showcase .showcase-content {
         padding-top: 20px !important;
     }
@@ -345,6 +353,18 @@ p {
     .box {
         width: 100% !important;
     }
+    #contact-form .btn {
+        font-size: smaller !important;
+    }
+    #contact-form h3 {
+        padding: 0px !important;
+    }
+    #about-info .info-left {
+        padding: 0px !important;
+    }
+    #about-info {
+        background-position: left center/cover !important;
+    }
     #main-footer h2 {
         font-size: smaller !important;
     }
@@ -356,9 +376,6 @@ p {
     }
     .nodisp900 {
         display: none;
-    }
-    .container {
-        max-width: 95%;
     }
     .highlight {
         color: #f17d09;
@@ -400,7 +417,7 @@ p {
     #about-info .info-left {
         width: 100%;
         padding: 50px;
-        text-align: justify;
+        text-align: center;
     }
     #testimonials {
         overflow: hidden;
