@@ -345,6 +345,9 @@ p {
     .box {
         width: 100% !important;
     }
+    #main-footer h2 {
+        font-size: smaller !important;
+    }
 }
 
 @media(max-width:900px) {
