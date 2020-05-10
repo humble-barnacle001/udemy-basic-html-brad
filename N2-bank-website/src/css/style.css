@@ -158,8 +158,9 @@ img {
     margin-bottom: 50px;
 } */
 
-.callback-form input {
-    width: 91%;
+.callback-form input,
+.callback-form button {
+    width: 87%;
     padding: 5px;
     height: 40px;
     border: #0284d0 solid 1px;
