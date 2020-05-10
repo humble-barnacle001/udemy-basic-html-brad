@@ -10,8 +10,6 @@
     cursor: pointer;
     display: inline-block;
     padding: 10px 20px;
-    color: white;
-    background: #28a745;
     border-radius: 7px;
 }
 
@@ -19,13 +17,14 @@
     opacity: 0.9;
 }
 
-.btn-secondary {
-    background: #0284d0;
-}
-
 .btn-outline {
     background: transparent;
     border: 1px #fff solid;
+}
+
+.bg-secondary {
+    background: #0284d0;
+    color: #eee;
 }
 
 .bg-dark {
@@ -47,6 +46,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    align-content: center;
     align-items: center;
     height: 100%;
 }
@@ -98,7 +98,7 @@
 }
 
 .flex-columns p {
-    margin-bottom: 20px 0;
+    margin: 20px 0;
 }
 
 .section-header {
