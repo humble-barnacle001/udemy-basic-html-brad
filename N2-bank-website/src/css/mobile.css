@@ -12,6 +12,9 @@
     .hero {
         height: 100vh;
     }
+    .footer .social>* {
+        margin: auto 7px;
+    }
     .flex-items {
         flex-direction: column;
     }

@@ -109,6 +109,37 @@ img {
     z-index: 1;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #28a745;
+}
+
+.footer i {
+    font-size: 3em;
+}
+
+.footer .social>* {
+    margin-right: 30px;
+}
+
+
+/* PRESENT ONLY IN SPECIFIC PAGES */
+
+
+/* HOMEPAGE */
+
 .icons {
     padding: 30px;
 }
@@ -171,4 +202,12 @@ img {
     padding: 14px 0;
     border: none;
     font-weight: bolder;
+}
+
+
+/* BLOG PAGE */
+
+.hero.blog {
+    background-image: url('/assets/img/home/blog.jpg');
+    height: 45vh;
 }

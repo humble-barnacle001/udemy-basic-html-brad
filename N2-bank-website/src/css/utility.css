@@ -131,24 +131,3 @@
     max-width: 25%;
     padding: 0 4px;
 }
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    height: 150px;
-}
-
-.footer a {
-    color: #fff;
-}
-
-.footer a:hover {
-    color: #28a745;
-}
-
-.footer .social>* {
-    margin-right: 30px;
-}
