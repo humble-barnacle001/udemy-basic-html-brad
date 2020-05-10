@@ -131,3 +131,7 @@
     max-width: 25%;
     padding: 0 4px;
 }
+
+.flex-grid .column img {
+    border-radius: 2vw;
+}
