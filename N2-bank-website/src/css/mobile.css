@@ -1,7 +1,4 @@
 @media(max-width:768px) {
-    html {
-        scroll-padding-top: 120px;
-    }
     .navbar {
         flex-direction: column;
         height: 120px;
