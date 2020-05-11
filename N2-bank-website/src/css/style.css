@@ -68,7 +68,7 @@ img {
 }
 
 .hero {
-    background: url('/assets/img/home/showcase.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/img/home/showcase.jpg') no-repeat center center/cover;
     height: 100vh;
     position: relative;
     color: #fff;
@@ -88,13 +88,14 @@ img {
     font-size: 55px;
 }
 
-.hero .contentp {
+.hero .content p {
     font-size: 25px;
     max-width: 550px;
     margin: 20px 0 30px;
 }
 
-.hero::before {
+
+/* .hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -103,7 +104,7 @@ img {
     height: 100%;
     background: #000;
     opacity: 0.55;
-}
+} */
 
 .hero * {
     z-index: 1;
@@ -207,7 +208,38 @@ img {
 
 /* BLOG PAGE */
 
-.hero.blog {
-    background-image: url('/assets/img/home/blog.jpg');
-    height: 45vh;
+.hero.blog,
+.hero.blogpost {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/img/home/blog.jpg');
+    height: 30vh;
+}
+
+
+/* BLOGPOST PAGE */
+
+.post {
+    padding: 50px 30px 70px;
+}
+
+.post h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+    margin-bottom: 30px;
+}
+
+.post img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.post a {
+    display: block;
+    float: right;
 }

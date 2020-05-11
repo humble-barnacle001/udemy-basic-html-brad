@@ -12,6 +12,14 @@
     .hero {
         height: 100vh;
     }
+    .hero.blog,
+    .hero.blogpost {
+        height: 40vh;
+    }
+    .hero .content {
+        justify-content: flex-end;
+        padding-bottom: 30px;
+    }
     .footer .social>* {
         margin: auto 7px;
     }
@@ -22,6 +30,9 @@
     .flex-grid .column {
         flex: 100%;
         max-width: 100%;
+    }
+    .flex-columns .col-img {
+        display: none;
     }
     .team img {
         width: 65%;
