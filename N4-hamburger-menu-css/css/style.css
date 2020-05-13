@@ -1,8 +1,8 @@
 :root {
     --col-pri: rgba(13, 110, 139, 0.75);
-    --col-ovrly: rgba(24, 39, 51, 0.95);
+    --col-ovrly: rgba(24, 39, 51, 1);
     --col-sec: rgba(229, 148, 0, 0.9);
-    --anim-speed: 0.75s;
+    --anim-speed: 0.5s;
 }
 
 * {
@@ -50,6 +50,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .btn {

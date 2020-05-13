@@ -1,10 +1,3 @@
-:root {
-    --col-pri: rgba(13, 110, 139, 0.75);
-    --col-ovrly: rgba(24, 39, 51, 0.95);
-    --col-sec: rgba(229, 148, 0, 0.9);
-    --anim-speed: .75s;
-}
-
 .menu-wrap {
     position: fixed;
     top: 0;
@@ -81,4 +74,64 @@
 
 .menu-wrap .toggler:checked:hover+.hamburger>div {
     transform: rotate(225deg);
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu>div {
+    background: var(--col-ovrly);
+    width: 300vh;
+    height: 300vh;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--anim-speed) ease-in;
+    transform: scale(0);
+    border-radius: 50%;
+}
+
+.menu-wrap .menu>div>div {
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity var(--anim-speed) ease;
+}
+
+.menu-wrap .menu>div>div>ul>li {
+    list-style: none;
+    color: white;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.menu-wrap .menu>div>div>ul>li>a {
+    transition: color var(--anim-speed) ease;
+}
+
+.menu-wrap .menu>div>div>ul>li>a:hover {
+    color: var(--col-sec);
+}
+
+.menu-wrap .toggler:checked~.menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked~.menu>div {
+    transform: scale(1);
+}
+
+.menu-wrap .toggler:checked~.menu>div>div {
+    opacity: 1;
 }
