@@ -1,0 +1,67 @@
+:root {
+    --col-pri: rgba(13, 110, 139, 0.75);
+    --col-ovrly: rgba(24, 39, 51, 0.95);
+    --col-sec: rgba(229, 148, 0, 0.9);
+    --anim-speed: 0.75s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.42;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+#showcase {
+    background: linear-gradient(var(--col-pri), var(--col-pri)), url('/img/showcase.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+#showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+
+#showcase p {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--col-pri);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    transition: opacity var(--anim-speed) ease-in;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
