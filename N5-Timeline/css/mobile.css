@@ -16,6 +16,7 @@
     }
     #timeline ul li:nth-child(even)>div {
         left: 40px;
+        transform: translate(300px, 0);
     }
     #timeline ul li:nth-child(even)>div::before {
         left: -15px;

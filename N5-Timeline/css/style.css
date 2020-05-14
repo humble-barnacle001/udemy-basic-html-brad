@@ -4,6 +4,10 @@
     --max-width: 1100px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -58,14 +62,18 @@ h1 {
     padding: 1rem;
     background: var(--col-sec);
     transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 
 #timeline ul li:nth-child(odd)>div {
     left: 40px;
+    transform: translate(300px, 0);
 }
 
 #timeline ul li:nth-child(even)>div {
     left: -434px;
+    transform: translate(-300px, 0);
 }
 
 #timeline ul li::after {
@@ -77,7 +85,7 @@ h1 {
     height: 30px;
     transform: translateX(-50%);
     border-radius: 50%;
-    background-color: var(--col-sec);
+    background-color: #fff;
     transition: background 0.5s ease-in-out;
 }
 
@@ -100,4 +108,14 @@ h1 {
     right: -15px;
     border-width: 8px 0 8px 16px;
     border-color: transparent transparent transparent var(--col-sec);
+}
+
+#timeline ul li.show>div {
+    transform: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#timeline ul li.show::after {
+    background-color: var(--col-sec);
 }
