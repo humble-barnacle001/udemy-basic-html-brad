@@ -246,6 +246,10 @@ p {
     padding: 3rem;
 }
 
+.head {
+    font-size: 3rem;
+}
+
 .list {
     list-style: none;
 }
@@ -262,7 +266,7 @@ p {
 
 .card {
     background: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .card.bg-dark {
@@ -310,9 +314,9 @@ p {
 
 .flex-column {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .articles-container article:first-child {
@@ -360,10 +364,10 @@ p {
 
 .page-container {
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 6fr 2fr;
     gap: 1.5rem;
 }
 
 .page-container>article {
-    grid-row: 1 /span 4;
+    grid-row: 1 /span 3;
 }
