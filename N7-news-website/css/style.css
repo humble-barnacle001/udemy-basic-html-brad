@@ -371,3 +371,15 @@ p {
 .page-container>article {
     grid-row: 1 /span 3;
 }
+
+#article .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.55rem;
+}
+
+#article .meta .category {
+    margin: auto 0;
+}
