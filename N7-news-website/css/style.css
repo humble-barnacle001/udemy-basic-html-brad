@@ -108,8 +108,20 @@ p {
     margin-right: 0.5rem;
 }
 
-#main-nav .social i:hover {
-    color: var(--col-pri);
+#main-nav .social i.fa-facebook:hover {
+    color: #3b5998;
+}
+
+#main-nav .social i.fa-twitter:hover {
+    color: #0084b4;
+}
+
+#main-nav .social i.fa-instagram:hover {
+    color: rgb(193, 53, 132);
+}
+
+#main-nav .social i.fa-youtube:hover {
+    color: #c4302b;
 }
 
 .category {
@@ -258,6 +270,11 @@ p {
     background-color: #333;
 }
 
+.card.bg-secondary {
+    background-color: var(--col-sec);
+    color: #333;
+}
+
 .card.bg-primary {
     background-color: var(--col-pri);
     color: #fff;
@@ -339,4 +356,14 @@ p {
 .footer-container input[type='email']:focus {
     outline: none;
     border: var(--col-pri) 1px solid;
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 1.5rem;
+}
+
+.page-container>article {
+    grid-row: 1 /span 4;
 }
