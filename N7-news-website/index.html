@@ -4,13 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>NewsGrid | Latest News</title>
 </head>
 
 <body>
+    <nav id="main-nav">
+        <div class="container">
+            <img src="/img/logo.png" alt="" class="logo">
+            <div class="social">
+                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-facebook"></i></a>
+                <a href="http://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-twitter"></i></a>
+                <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-instagram"></i></a>
+                <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-2x fa-youtube"></i></a>
+            </div>
+            <ul>
+                <li><a href="/index.html" class="current">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="showcase">
+        <div class="container">
+            <div class="showcase-container">
+                <div class="showcase-content">
+                    <div class="category sports"></div>
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit. Nemo ea impedit quaerat labore, molestias minus nulla deserunt doloremque tempore architecto, dolores sed. Saepe, rerum tempora! Lorem ipsum dolor, sit amet consec tetur ainlendus.</p>
+                    <a href="/article.html" class="btn bg-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <section id="home-articles" class="py-2 container">
+        <h2>Editor's Picks</h2>
+        <div class="articles-container">
+            <article class="card flex-row">
+                <img src="/img/articles/ent1.jpg" alt="">
+                <div>
+                    <div class="category ent"></div>
+                    <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                    </p>
+                </div>
+            </article>
+            <article class="card bg-dark">
+                <div class="category sports"></div>
+                <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                </p>
+            </article>
+            <article class="card flex-column">
+                <img src="/img/articles/tech1.jpg" alt="">
+                <div>
+                    <div class="category tech"></div>
+                    <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                    </p>
+                </div>
+            </article>
+            <article class="card flex-column">
+                <div>
+                    <div class="category sports"></div>
+                    <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                    </p>
+                </div>
+                <img src="/img/articles/sports1.jpg" alt="">
+            </article>
+            <article class="card flex-column">
+                <img src="/img/articles/tech2.jpg" alt="">
+                <div>
+                    <div class="category tech"></div>
+                    <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                    </p>
+                </div>
+            </article>
+            <article class="card bg-primary">
+                <div class="category sports"></div>
+                <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                </p>
+            </article>
+            <article class="card flex-row">
+                <div>
+                    <div class="category ent"></div>
+                    <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                    </p>
+                </div>
+                <img src="/img/articles/ent2.jpg" alt="">
+            </article>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark p-2">
+        <div class="container footer-container">
+            <div>
+                <img src="/img/logo_light.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati, reprehenderit soluta, quos minima qui sed quisquam doloremque libero incidunt nulla!</p>
+            </div>
+            <div>
+                <h2>Email Newsletter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aperiam!</p>
+                <form name="NEWSLETTER" data-netlify="true" data-netlify-recaptcha="true" method="post">
+                    <input type="email" name="email" id="email" class="btn-block" placeholder="Enter email....">
+                    <div data-netlify-recaptcha="true"></div>
+                    <input type="submit" value="Subscribe" class="btn btn-block bg-primary">
+                </form>
+            </div>
+            <div>
+                <h2>Site Links</h2>
+                <ul class="list">
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Lorem, ipsum dolor.</p>
+                <h2>Join our club</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <a href="#" class="btn bg-secondary">Join Now</a>
+            </div>
+        </div>
+        <div class="container footer-copyright">
+            <p>
+                Copyright &copy; 2020, All Rights Reserved
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
