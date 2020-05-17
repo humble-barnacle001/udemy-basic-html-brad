@@ -13,6 +13,7 @@ const run = () => {
     }
 }
 window.addEventListener('scroll', run);
+window.addEventListener('resize', run);
 
 
 

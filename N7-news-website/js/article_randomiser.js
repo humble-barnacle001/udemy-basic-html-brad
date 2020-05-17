@@ -16,3 +16,4 @@ const randomise = () => {
     });
 };
 window.addEventListener('load', randomise);
+window.addEventListener('resize', randomise);
