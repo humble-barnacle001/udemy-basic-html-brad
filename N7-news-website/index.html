@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 868px)" href="/css/mobile.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>NewsGrid | Latest News</title>
-    <script data-ad-client="ca-pub-8137007579001649" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- <script data-ad-client="ca-pub-8137007579001649" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
 </head>
 
 <body>
-    <nav id="main-nav">
+    <nav id="main-nav" class="navbar">
         <div class="container">
             <img src="/img/logo.png" alt="" class="logo">
             <div class="social">
@@ -58,7 +60,11 @@
                 <div class="category sports"></div>
                 <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
                 <p>
-                    Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consecetur adipisicing elit. Lorem ipsum dolor sit, amet consecad.
+                </p>
+                <p class="nodisp768">
+                    Ipisicing elit. Aper iam perspic iatis id corp oris ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipi sicing elit. Lorem ipsum dolor sit, amet consec tetur adipi sicing elit. Aperiam perspi ciatis id corp oris ipsum totam at delec Lorem
+                    ipsum dolor sit, amet consec tetur adipi sicing elit.
                 </p>
             </article>
             <article class="card flex-column">
@@ -95,6 +101,12 @@
                 <div class="category sports"></div>
                 <h3><a href="/article.html">Lorem ipsum dolor sit amet.</a></h3>
                 <p>
+                    Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                </p>
+                <p class="nodisp768">
+                    Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perss id corporis ipsum corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
+                </p>
+                <p class="nodisp768">
                     Lorem ipsum dolor sit, amet consec tetur adipisicing elit. Aperiam perspiciatis id corporis ipsum totam at delec Lorem ipsum dolor sit, amet consec tetur adipisicing elit.
                 </p>
             </article>
@@ -148,6 +160,16 @@
             </p>
         </div>
     </footer>
+
+
+    <script>
+        (function() {
+            if (window.innerWidth > 600) {
+                document.write('<scr' + 'ipt type="text/javascript" src="/js/transp.js" async></scr' + 'ipt>');
+            }
+        })();
+    </script>
+    <script src="/js/transp.js" async></script>
 </body>
 
 </html>
