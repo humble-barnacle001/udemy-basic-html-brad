@@ -5,7 +5,7 @@ var b = 200 + Math.floor(Math.random() * 56);
 var tr = 255 - r;
 var tg = 255 - g;
 var tb = 255 - b;
-const run = () => {
+const randomise = () => {
 
     var col = 'rgb('.concat(r.toString(), ',', g.toString(), ',', b.toString(), ')');
     var tcol = 'rgb('.concat(tr.toString(), ',', tg.toString(), ',', tb.toString(), ')');
@@ -15,4 +15,4 @@ const run = () => {
         item.style.opacity = 1;
     });
 };
-window.addEventListener('load', run);
+window.addEventListener('load', randomise);
