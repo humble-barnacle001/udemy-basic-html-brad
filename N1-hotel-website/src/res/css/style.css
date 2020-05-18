@@ -130,12 +130,12 @@ a {
 }
 
 #show1 {
-    background: url('/res/img/hotel-interior.jpg') no-repeat center center/cover;
+    background: url('../img/hotel-interior.jpg') no-repeat center center/cover;
     opacity: 0.8;
 }
 
 #show2 {
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .4)), url('/res/img/logo.png') center center/cover no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .4)), url('../img/logo.png') center center/cover no-repeat;
     background-color: #ccc;
     z-index: -1;
     overflow: auto;

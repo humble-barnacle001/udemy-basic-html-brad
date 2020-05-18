@@ -296,7 +296,7 @@ p {
 
 #showcase {
     color: #fff;
-    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.5)), url('/img/featured.jpg') center center/cover no-repeat;
+    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.5)), url('../img/featured.jpg') center center/cover no-repeat;
     padding: 2rem;
 }
 

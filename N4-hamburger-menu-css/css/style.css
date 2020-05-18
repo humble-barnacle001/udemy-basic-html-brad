@@ -24,7 +24,7 @@ body {
 }
 
 #showcase {
-    background: linear-gradient(var(--col-pri), var(--col-pri)), url('/img/showcase.jpg') no-repeat center center/cover;
+    background: linear-gradient(var(--col-pri), var(--col-pri)), url('../img/showcase.jpg') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     position: relative;

@@ -36,13 +36,13 @@
     }
     /* HOME PAGE PICTURE DISPLAY COLUMN CORRECTION */
     .solutions.flex-columns .col-text {
-        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('/assets/img/home/people.jpg') center center/cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../../assets/img/home/people.jpg') center center/cover no-repeat;
     }
     #contact.flex-columns .col-text {
-        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2)), url('/assets/img/home/contact.jpg') center center/cover no-repeat;
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.2)), url('../../assets/img/home/contact.jpg') center center/cover no-repeat;
     }
     #blog.flex-columns .col-text {
-        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('/assets/img/home/blog.jpg') center center/cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('../../assets/img/home/blog.jpg') center center/cover no-repeat;
     }
     .team img {
         width: 75%;
@@ -53,13 +53,13 @@
     }
     /* BLOG PAGE PICTURE DISPLAYCOLUMN CORRECTION */
     #blog1.flex-columns .col-text {
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)), url('/assets/img/blog/blog1.jpg') center center/cover no-repeat;
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)), url('../../assets/img/blog/blog1.jpg') center center/cover no-repeat;
     }
     #blog2.flex-columns .col-text {
-        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('/assets/img/blog/blog2.jpg') center center/cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('../../assets/img/blog/blog2.jpg') center center/cover no-repeat;
     }
     #blog3.flex-columns .col-text {
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)), url('/assets/img/blog/blog3.jpg') center center/cover no-repeat;
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)), url('../../assets/img/blog/blog3.jpg') center center/cover no-repeat;
     }
     /* END OF CORRECTIONS */
 }
