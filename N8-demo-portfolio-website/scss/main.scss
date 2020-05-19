@@ -1,0 +1,200 @@
+@import 'var';
+@import 'util';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dosis', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.65;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: $col-dark;
+}
+
+ul{
+    list-style: none;
+}
+
+h{
+    &2,
+    &3,
+    &4{
+        text-transform: uppercase;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+}
+
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    ul{
+        display: flex;
+        li{
+            padding: 1rem 1.5rem;
+            a{
+                color: #fff;
+                text-transform: uppercase;
+                border-bottom: 3px transparent solid;
+                text-decoration: none;
+                padding-bottom: 0.5rem;
+                transition: border-color 0.5s;
+                &:hover{
+                    border-color: $col-sec;
+                }
+                &.current{
+                    border-color: $col-pri;
+                }
+            }
+        }
+    }
+}
+
+#header{
+    &-home{
+        background: $bg-img no-repeat center right/cover;
+        height: 100vh;
+        color: #fff;
+        .header-content{
+            text-align: center;
+            padding-top: 30vh;
+            h1{
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+#main-footer{
+    background-color: $col-dark;
+    color: #fff;
+    height: 5rem;
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        .social .fab{
+            margin: 0 0.5rem;
+            color: #fff;
+            border: 2px #fff solid;
+            border-radius: 50%;
+            height: 1.25rem;
+            width: 1.25rem;
+            line-height: 1.25rem;
+            text-align: center;
+            padding: 0.5rem;
+            &:hover{
+                background-color: $col-pri;
+                color: text-col($col-pri);
+            }
+        }
+    }
+}
+
+#home{
+    &-a{
+        .specials{
+            margin-top: 3rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(4,1fr);
+            i{
+                color: $col-pri;
+                padding: 0.4rem 0;
+            }
+        }
+    }
+
+    &-b{
+        .stats{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            li{
+                line-height: 2;
+                &.stats-title{
+                    font-size: 1.5rem;
+                }
+                &.stats-val{
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+            div{
+                padding: 3rem 0;
+                &:nth-child(odd){
+                    background-color: $col-light;
+                }
+                &:nth-child(even){
+                    background-color: $col-sec;
+                }
+            }
+        }
+    }
+
+    &-c{
+        .process{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 1.5rem;
+            text-align: center;
+
+            &-step{
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 1.5rem;
+                background-color: $col-pri;
+                border-radius: 50%;
+                height: 1rem;
+                width: 1rem;
+                line-height: 1rem;
+                padding: 1rem;
+                transition: all 1s;
+            }
+            &-icon{
+                border-radius: 50%;
+                background-color: $col-dark;
+                color: #fff;
+                padding: 2rem;
+                width: 4.5rem;
+                height: 4.5rem;
+                line-height: 4.5rem;
+                text-align: center;
+                position: relative;
+                transition: all 0.5s;
+
+                &:hover{
+                    background-color: $col-pri;
+                    color: $col-dark;
+                    width: 5.5rem;
+                    height: 5.5rem;
+                    line-height: 5.5rem;
+                    margin: 1.5rem;
+                    .process-step{
+                        background-color: $col-dark;
+                        color: $col-light;
+                    }
+                }
+            }
+        }
+    }
+}

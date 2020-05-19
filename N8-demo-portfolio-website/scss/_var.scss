@@ -1,0 +1,15 @@
+$max-width: 1250px;
+$col-pri: #ffbc00;
+$col-light: #f4f4f4;
+$col-dark: #333;
+$col-sec: #ccc;
+$bg-img: url('../img/showcase.jpg');
+
+@function text-col($col){
+    @if (lightness($col)>50) {
+        @return #000;
+    }
+    @else{
+        @return #fff;
+    }
+}

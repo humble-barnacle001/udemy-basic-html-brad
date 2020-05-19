@@ -1,0 +1,75 @@
+.container{
+    max-width: $max-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+%btn-base{
+    display: inline-block;
+    padding: .8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn{
+    &-main{
+        @extend %btn-base;
+        color: #333;
+        background-color: $col-pri;
+    }
+    &-light{
+        @extend %btn-base;
+        color: #333;
+        background-color: $col-light;
+    }
+    &-dark{
+        @extend %btn-base;
+        color: #f4f4f4;
+        background-color: $col-dark;
+    }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover{
+    background-color: $col-pri;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.py-1{padding: 1rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+.py-4{padding: 4rem 0;}
+
+.my-1{margin: 1rem 0;}
+.my-2{margin: 2rem 0;}
+.my-3{margin: 3rem 0;}
+.my-4{margin: 4rem 0;}
+
+.bottom-line{
+    height: 4px;
+    width:5rem;
+    background-color: $col-pri;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 40%;
+}
+
+.section-title{
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+}
