@@ -97,14 +97,14 @@ img{
             color: #fff;
             border: 2px #fff solid;
             border-radius: 50%;
-            height: 1.25rem;
-            width: 1.25rem;
-            line-height: 1.25rem;
+            height: 1.95rem;
+            width: 1.95rem;
+            line-height: 1.95rem;
             text-align: center;
             padding: 0.5rem;
             &:hover{
                 background-color: $col-pri;
-                color: text-col($col-pri);
+                color: #000;
             }
         }
     }

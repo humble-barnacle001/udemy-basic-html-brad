@@ -8,9 +8,13 @@
 %btn-base{
     display: inline-block;
     padding: .8rem 2rem;
+    margin: auto;
     transition: all 0.5s;
     border: none;
     cursor: pointer;
+}
+%btn-base:hover{
+    transform: scale(1.2);
 }
 
 .btn{
