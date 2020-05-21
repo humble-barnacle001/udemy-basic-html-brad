@@ -35,10 +35,21 @@
     }
 }
 
+button[type='submit']{
+    @extend %btn-base;
+    width: 25%;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    background-color: #666;
+    color: #fff;
+}
+
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover{
     background-color: $col-pri;
+    color: #0003ff;
+    font-weight: bolder;
 }
 
 .lead{
