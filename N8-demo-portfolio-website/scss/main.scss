@@ -69,7 +69,7 @@ img{
 
 #header{
     &-home{
-        background: $bg-img no-repeat center right/cover;
+        background: linear-gradient(to bottom right, rgba(255, 222, 0, 0.63),  rgba(40,40,40,0.1), rgba(8, 111, 228, 0.7)), $bg-img no-repeat center right/cover;
         height: 100vh;
         color: #fff;
         .header-content{
@@ -80,6 +80,12 @@ img{
                 line-height: 1.2;
             }
         }
+    }
+
+    &-inner{
+        background: $bg-img no-repeat 20% 30%/cover;
+        height: 5.7rem;
+        border-bottom: $col-pri 3px solid;
     }
 }
 
@@ -194,6 +200,98 @@ img{
                         color: $col-light;
                     }
                 }
+            }
+        }
+    }
+}
+
+#about{
+    &-a{
+        .about-info{
+            display: grid;
+            grid-template-areas: 
+            'bio-img bio bio'
+            'aw1 aw2 aw3';
+            gap: 1.2rem;
+        }
+        .bio-img{
+            grid-area: bio-img;
+        }
+        .bio{
+            grid-area: bio;
+            border-left: 3px solid $col-pri;
+            padding: 0.8rem;
+        }
+        .award-1{
+            grid-area: aw1;
+        }
+        .award-2{
+            grid-area: aw2;
+        }
+        .award-3{
+            grid-area: aw3;
+        }
+        i{
+            color: $col-pri;
+            margin: 1rem;
+        }
+    }
+
+    &-b{
+        h4{
+            margin: auto;
+            width: 70vw;
+        }
+
+        .progress{
+            overflow: hidden;
+            height: 0.5rem;
+            background: $col-sec;
+            border-radius: 7px;
+            margin: auto;
+            margin-bottom: 1.5rem;
+            width: 70vw;
+            div{
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                background-color: $col-pri;
+            }
+        }
+    }
+
+    &-c{
+        .about-logos{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            img{
+                width: 70%;
+            }
+        }
+    }
+
+    &-d{
+        .testimonials{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            ul{
+                list-style: none;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+            }
+            p{
+                border: $col-sec 1px solid;
+                border-radius: 7px;
+                padding: 0.5rem;
+            }
+            img{
+                height: 50px;
+                width: 50px;
+                margin-right: 0.5rem;
+                border-radius: 50%;
             }
         }
     }

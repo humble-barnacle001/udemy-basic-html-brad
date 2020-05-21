@@ -60,6 +60,25 @@ input[class^='btn-']:hover{
 .my-3{margin: 3rem 0;}
 .my-4{margin: 4rem 0;}
 
+.bg{
+    &-light{
+        background-color: $col-light;
+        color: text-col($col-light);
+    }
+    &-main{
+        background-color: $col-pri;
+        color: text-col($col-pri);
+    }
+    &-dark{
+        background-color: $col-dark;
+        color: text-col($col-dark);
+    }
+    &-sec{
+        background-color: $col-sec;
+        color: text-col($col-sec);
+    }
+}
+
 .bottom-line{
     height: 4px;
     width:5rem;
