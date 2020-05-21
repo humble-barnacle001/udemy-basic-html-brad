@@ -54,12 +54,14 @@ class TypeWriter {
   
   // Init On DOM Load
 // document.addEventListener('load', init);
-  
+  // window.addEventListener('resize',init);
   // Init App
 function init() {
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    if(vw>550){
     const txtElement = document.querySelector('.txt-type');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
     // Init TypeWriter
     new TypeWriter(txtElement, words, wait);
-}  
+}  }
