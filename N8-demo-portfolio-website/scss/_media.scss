@@ -147,7 +147,7 @@
 
     #contact{
         &-a .text-field{
-            grid-template-areas: 'name' 'email' 'sub' 'phone' 'message';
+            grid-template-areas: 'name' 'sub' 'email' 'phone' 'message';
         }
         &-b{
             font-size: 1.7rem;
