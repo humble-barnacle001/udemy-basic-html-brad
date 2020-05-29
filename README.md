@@ -1,2 +1,2 @@
 # udemy-basic-html-brad
-All the basic elements tested as explained in Udemy tutorial on Basic HTML and CSS by Brad
+All the basic elements of HTML5 and CSS3 including the SASS precompiler for CSS
