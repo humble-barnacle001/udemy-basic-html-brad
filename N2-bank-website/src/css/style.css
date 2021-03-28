@@ -51,6 +51,7 @@ img {
     position: fixed;
     top: 0;
     padding: 0 30px;
+    z-index: 1000;
 }
 
 .navbar a {
